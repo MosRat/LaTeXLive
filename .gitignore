@@ -1,4 +1,5 @@
 node_modules
+dist
 
 #.gitignore
 push_url.txts
