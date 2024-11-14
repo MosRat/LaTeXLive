@@ -9,7 +9,8 @@ deploy:
     git pull
     git rm -rf .
     cp -r dist/* .
-    git add css img js json lib publish index.html
+    echo "latexlive.whl.moe" > CNAME
+    git add css img js json lib publish index.html CNAME
     git commit -am "Deploy to GitHub Pages"
     git push --force
     git checkout main
