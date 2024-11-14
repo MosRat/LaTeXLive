@@ -3,8 +3,8 @@ node_modules
 #.gitignore
 push_url.txts
 
-lib
-img
+#lib
+#img
 # js
 # json
 # .babelrc
