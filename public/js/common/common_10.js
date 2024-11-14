@@ -106,10 +106,7 @@ var headCommon = {
     document.writeln("  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js'></script>");
   },
   googleads: function () {
-    if (Environment != "development") {
-      document.writeln("  <script data-ad-client='ca-pub-4786420636728190' async");
-      document.writeln("    src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script>");
-    }
+
   },
 };
 headCommon.init();
