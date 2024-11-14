@@ -3,6 +3,7 @@ dist
 
 #.gitignore
 push_url.txts
+justfile
 
 #lib
 #img
