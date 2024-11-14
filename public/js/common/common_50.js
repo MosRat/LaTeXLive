@@ -5,7 +5,7 @@ document.writeln("<script src='" + boot_body + "/lib/bootstrap-4.3.1-dist/js/boo
 
 var scriptLoader = {
   script_list: {
-    latex: ["<script src='" + boot_body + "/lib/tippy/popper.min.js'></script>", "<script src='https://cdn.bootcss.com/tippy.js/6.1.0/tippy-bundle.umd.min.js'></script>", "<script src='" + boot_body + "/lib/caret/caret.js'></script>", "<script src='" + boot_body + js_body + "?ver=" + ver_body + "' type='module'></script>"],
+    latex: ["<script src='" + boot_body + "/lib/tippy/popper.min.js'></script>", "<script src='/lib/tippy/tippy-bundle.umd.min.js'></script>", "<script src='" + boot_body + "/lib/caret/caret.js'></script>", "<script src='" + boot_body + js_body + "?ver=" + ver_body + "' type='module'></script>"],
     readme: ["<script src='" + boot_body + js_body + "?ver=" + ver_body + "' type='module'></script>"],
     update: ["<script src='" + boot_body + js_body + "?ver=" + ver_body + "' type='module'></script>"],
     messageboard: ["<script src='" + boot_body + "/lib/wangEditor/wangEditor.min.js'></script>", "<script src='" + boot_body + js_body + "?ver=" + ver_body + "' type='module'></script>"],
@@ -22,21 +22,21 @@ var scriptLoader = {
       document.getElementById("isJavaScript").remove();
       document.getElementById("ifIE-show").remove();
       //更新图片路径
-      document.getElementById("img_eqcode").src = boot_body + "/img/wechat.png";
-      document.getElementById("img_toutiao").src = boot_body + "/img/toutiao.png";
-      document.getElementById("img_police").src = boot_body + "/img/police.png";
-      document.getElementById("img_gitee").src = boot_body + "/img/gitee.png";
+      // document.getElementById("img_eqcode").src = boot_body + "/img/wechat.png";
+      // document.getElementById("img_toutiao").src = boot_body + "/img/toutiao.png";
+      // document.getElementById("img_police").src = boot_body + "/img/police.png";
+      // document.getElementById("img_gitee").src = boot_body + "/img/gitee.png";
       //更新标题中的版本号
-      document.getElementById("ver_h1").innerHTML = "ver" + ver_body;
+      // document.getElementById("ver_h1").innerHTML = "ver" + ver_body;
       //更新版权中的版本号
-      let date = new Date();
-      let month = date.getMonth() + 1;
-      let month_0 = month < 10 ? "0" + month : "" + month;
-      let date_join = "." + date.getFullYear() + month_0 + date.getDate();
-      document.getElementById("copyver").innerHTML = "Copyright &copy; 2019 妈咪说（北京）科技传媒Co.,Ltd. All Rights Reserved&nbsp;&nbsp;ver:" + ver_body + date_join;
+      // let date = new Date();
+      // let month = date.getMonth() + 1;
+      // let month_0 = month < 10 ? "0" + month : "" + month;
+      // let date_join = "." + date.getFullYear() + month_0 + date.getDate();
+      // document.getElementById("copyver").innerHTML = "Copyright &copy; 2019 妈咪说（北京）科技传媒Co.,Ltd. All Rights Reserved&nbsp;&nbsp;ver:" + ver_body + date_join;
       //加载body资源
       scriptLoader.loadOuterScript();
-      scriptLoader.googleads();
+      // scriptLoader.googleads();
       document.body.removeChild(document.getElementById("common_50"));
     }
   },
