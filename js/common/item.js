@@ -55,9 +55,6 @@ export var StringDeal = {
 
 export var LoadComplete = {
   closeLoadingMask: function () {
-    setTimeout(function () {
-      document.getElementById("loading").style.display = "none";
-    }, 200);
   },
 };
 

@@ -10,7 +10,7 @@ const Environment = "release";
 
 const Config = {
   development: {
-    Version: "开发版" + new Date().getTime(),
+    Version: "" + new Date().getTime(),
     MainJS: {
       latex: "/publish/latex.bundle.min.js",
       readme: "/publish/readme.bundle.min.js",
@@ -21,7 +21,7 @@ const Config = {
     },
     Boot_OSS: "..",
     WebAPI: {
-      Root: "api服务器地址",
+      Root: "",
       Controller: {
         GetLaTexFromMathPix: "Mathpix/GetLaTexFromMathPix",
         LoginByMyToken: "Client/LoginByMyToken",
@@ -37,15 +37,15 @@ const Config = {
         GetRemainTime: "Client/GetRemainTime",
       },
     },
-    Hostname: "本机服务器ip",
+    Hostname: "",
     WXLogin: {
-      AppID: "微信id",
-      RedirectURL: "完整网址",
+      AppID: "",
+      RedirectURL: "",
     },
   },
 
   debug: {
-    Version: "生产环境模拟版" + new Date().getTime(),
+    Version: "" + new Date().getTime(),
     MainJS: {
       latex: "/publish/latex.bundle.min.js",
       readme: "/publish/readme.bundle.min.js",
@@ -72,10 +72,10 @@ const Config = {
         GetRemainTime: "Client/GetRemainTime",
       },
     },
-    Hostname: "测试服务器ip+端口号",
+    Hostname: "",
     WXLogin: {
-      AppID: "微信id",
-      RedirectURL: "完整网址",
+      AppID: "",
+      RedirectURL: "",
     },
   },
   
@@ -91,7 +91,7 @@ const Config = {
     },
     Boot_OSS: "",
     WebAPI: {
-      Root: "api服务器地址",
+      Root: "",
       Controller: {
         GetLaTexFromMathPix: "Mathpix/GetLaTexFromMathPix",
         LoginByMyToken: "Client/LoginByMyToken",
@@ -107,10 +107,10 @@ const Config = {
         GetRemainTime: "Client/GetRemainTime",
       },
     },
-    Hostname: "完整网址",
+    Hostname: "",
     WXLogin: {
-      AppID: "微信id",
-      RedirectURL: "完整网址",
+      AppID: "",
+      RedirectURL: "",
     },
   },
 };
